@@ -8,38 +8,32 @@
     <link rel="stylesheet" href="./statics/styles/normalize.css">
     <link rel="stylesheet" href="./statics/styles/heti.min.css">
     <link rel="stylesheet" href="./statics/styles/style.css">
-    <div class="avatar-bg"></div>
+    
     <style>
         .bg3
         {
             background : linear-gradient(to top, rgba(0, 37, 61, 1) 0.08%, rgba(0, 87, 81, 1) 100%);
             z-index: -1;
         }
-	.parent-container {
-  position: relative; 
+	 .avatar-bg {
+            width: 200px;
+            height: 200px;
+            background-image: url('statics/imgs/hana/192164586.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            z-index: 1000; 
         }
-
-.avatar-bg {
-  position: absolute; 
-  top: 10px; 
-  left: 10px; 
-  z-index: 10; 
-  margin: 20px auto;
-}
-       .avatar-bg {
-			  width: 200px; 
-			  height: 200px; 
-			  background-image: url('statics/imgs/hana/192164586.jpg');
-			  background-size: cover;
-			  background-position: center;
-			  border-radius: 50%;
-			  border: 2px solid #ddd;
-			  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-			  margin: 20px auto; 
-			}
     </style>
 </head>
 <body class="pos-relative mori animation-on">
+	 <div class="avatar-bg"></div>
 <!--<div style="height: 400vh"></div>-->
 <div class="window-size pos-absolute pos-all-0 bg3"></div>
 <div class="window-size pos-absolute pos-all-0 mori-clip">
