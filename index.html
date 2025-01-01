@@ -15,21 +15,30 @@
             background : linear-gradient(to top, rgba(0, 37, 61, 1) 0.08%, rgba(0, 87, 81, 1) 100%);
             z-index: -1;
         }
-	 .avatar-bg {
-            width: 200px;
-            height: 200px;
-            background-image: url('statics/imgs/hana/192164586.jpg');
-            background-size: cover;
-            background-position: center;
-            border-radius: 50%;
-            border: 2px solid #ddd;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-            position: fixed; 
-            top: 50%; 
-            left: 50%; 
-            transform: translate(-50%, -50%); 
-            z-index: 1000; 
-        }
+	.avatar-bg {
+  width: 200px;
+  height: 200px;
+  background-image: url('statics/imgs/hana/192164586.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); 
+  position: fixed;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  z-index: 1000; 
+  animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
     </style>
 </head>
 <body class="pos-relative mori animation-on">
